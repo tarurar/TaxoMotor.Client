@@ -1,0 +1,26 @@
+﻿Title;Tm_ConfigurationValue;Tm_ConfigurationDescr
+MessageQueueServiceUrl; http://77.95.132.133:8082/DataService.svc;Адрес очереди
+BR2ServiceGuid;df8ff4be-d4ae-e011-91ec-000c29d12628;АС УР прод среда
+AsGufServiceGuid;fee650d8-5048-e311-ba9a-005056802550;
+SignerName;SignerName;Имя подписанта
+SignerJob;SignerJob;Должность подписанта
+OdopmUrl;http://er4.mos.ru:80/EHDWS/soap;
+OdopmClientCertificate;e5 14 d8 fb 77 09 7a 58 68 ff cb 10 e9 5d b1 18 35 11 36 73;
+LocalDBHost;77.95.132.133;
+LocalDBName;TM.Data;
+OdopmSingleSignOnAppId;ODOPM;
+LocalDBWriterAccessSingleSignOnAppId;LocalDBWriterAccess;
+MoServiceUrl;http://lvserv.ru:50503/service_tax_mo/service/;
+RatingsSSOAppId;RatingsAccess;
+ProductionCalendarListUrl;Lists/ProdCalendarList;Адрес списка производственного календаря
+MigrateIncomeRequestCountPerJob;1;Количество элементов обращений для миграции за один запуск менеджера миграции (один запуск Timer Job)
+MigrateLicenseCountPerJob;1;Количество элементов разрешений для миграции за один запуск менеджера миграции (один запуск Timer Job)
+AutoSendOdopm;0;Автоматическая отправка в ОДОПМ
+AutoSendMo;0;Автоматическая отправка в МО
+AutoSendSpecVehicleRegister;0;Автоматическая отправка в РСТ
+UseVIN;0;Использовать для проверок ТС код VIN
+GibddSpecTransportServiceUrl;http://188.127.245.220:1022/SpecialTransportDataReceiverService/SpecialTransportDataReceiver?wsdl;Адрес сервиса реестра спецтранспорта ГИБДД
+GibddTakeOffServiceUrl;http://188.127.245.220:1022/ModerationJournal/ModerationJournalQueryService?wsdl;Адрес сервиса снятых с учета ТС в ГИБДД
+LicenseAutoSender.RequestsPerHour;50;Автоматическая отправка запросов по разрешениям. Количество запросов в час
+LicenseAutoSender.NotAnsweredThreshold;150;Автоматическая отправка запросов по разрешениям. Пороговое значение запросов без ответов, свыше которого новые запросы отправляться не будут
+LicenseAutoSender.CycleInDays;60;Автоматическая отправка запросов по разрешениям. Цикл в днях по истечении которого разрешение снова может попасть под автоматическую отправку запросов

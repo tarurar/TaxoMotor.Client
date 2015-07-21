@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TM.SP.CodeModel
+namespace TM.SP.CodeModel.Deployers
 {
-    public class Class1
+    public interface IDeployer
     {
+        void Deploy();
     }
 }

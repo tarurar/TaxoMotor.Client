@@ -9,6 +9,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TM.SP.CodeModelDeploy", "TM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TM.SP.ClientCode", "TM.SP.ClientCode\TM.SP.ClientCode.csproj", "{026BC190-FF0E-4488-B0A6-FABEA7A0623C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TM.SP.DataModel", "TM.SP.DataModel\TM.SP.DataModel.csproj", "{F3AF0C59-F72C-4992-B2B3-93C71ADA489C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TM.SP.DataModelDeploy", "TM.SP.DataModelDeploy\TM.SP.DataModelDeploy.csproj", "{7A07ADF1-A662-4D2B-8F96-88A5CCC3204C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TM.SP.DataDeploy", "TM.SP.DataDeploy\TM.SP.DataDeploy.csproj", "{25D32265-8754-4C12-A858-CB6B31886825}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TM.ClientUtils", "TM.ClientUtils\TM.ClientUtils.csproj", "{C7E55FAA-3035-49DE-86CC-20B7F5D89C33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EF857671-9699-42BF-8C12-4122E80BEF67}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{7213BF6D-FF99-4D6A-A6FA-437A9CA7DAB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{9E73A123-C99A-4A13-B5D9-E7B3BD646C47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +46,31 @@ Global
 		{026BC190-FF0E-4488-B0A6-FABEA7A0623C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{026BC190-FF0E-4488-B0A6-FABEA7A0623C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{026BC190-FF0E-4488-B0A6-FABEA7A0623C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3AF0C59-F72C-4992-B2B3-93C71ADA489C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3AF0C59-F72C-4992-B2B3-93C71ADA489C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3AF0C59-F72C-4992-B2B3-93C71ADA489C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3AF0C59-F72C-4992-B2B3-93C71ADA489C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A07ADF1-A662-4D2B-8F96-88A5CCC3204C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A07ADF1-A662-4D2B-8F96-88A5CCC3204C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A07ADF1-A662-4D2B-8F96-88A5CCC3204C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A07ADF1-A662-4D2B-8F96-88A5CCC3204C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25D32265-8754-4C12-A858-CB6B31886825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25D32265-8754-4C12-A858-CB6B31886825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25D32265-8754-4C12-A858-CB6B31886825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25D32265-8754-4C12-A858-CB6B31886825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E55FAA-3035-49DE-86CC-20B7F5D89C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E55FAA-3035-49DE-86CC-20B7F5D89C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E55FAA-3035-49DE-86CC-20B7F5D89C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E55FAA-3035-49DE-86CC-20B7F5D89C33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA8D946A-3E89-41D7-B83C-E063B0B866F0} = {7213BF6D-FF99-4D6A-A6FA-437A9CA7DAB9}
+		{9294BDC8-18DF-4E1B-A418-2B3386D18184} = {7213BF6D-FF99-4D6A-A6FA-437A9CA7DAB9}
+		{F3AF0C59-F72C-4992-B2B3-93C71ADA489C} = {7213BF6D-FF99-4D6A-A6FA-437A9CA7DAB9}
+		{7A07ADF1-A662-4D2B-8F96-88A5CCC3204C} = {7213BF6D-FF99-4D6A-A6FA-437A9CA7DAB9}
+		{25D32265-8754-4C12-A858-CB6B31886825} = {9E73A123-C99A-4A13-B5D9-E7B3BD646C47}
 	EndGlobalSection
 EndGlobal

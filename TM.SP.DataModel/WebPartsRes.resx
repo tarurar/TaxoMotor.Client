@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IncomeRequestListViewXml" xml:space="preserve">
+    <value>&lt;webParts&gt;
+  &lt;webPart xmlns="http://schemas.microsoft.com/WebPart/v3"&gt;
+    &lt;metaData&gt;
+      &lt;type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" /&gt;
+      &lt;importErrorMessage&gt;Cannot import this Web Part.&lt;/importErrorMessage&gt;
+    &lt;/metaData&gt;
+    &lt;data&gt;
+      &lt;properties&gt;
+        &lt;property name="ShowWithSampleData" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="Default" type="string" /&gt;
+        &lt;property name="NoDefaultStyle" type="string" null="true" /&gt;
+        &lt;property name="CacheXslStorage" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="ViewContentTypeId" type="string" /&gt;
+        &lt;property name="XmlDefinitionLink" type="string" /&gt;
+        &lt;property name="ManualRefresh" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="ListUrl" type="string" /&gt;
+        &lt;property name="ListId" type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"&gt;&lt;/property&gt;
+        &lt;property name="TitleUrl" type="string"&gt;/Lists/IncomeRequestList&lt;/property&gt;
+        &lt;property name="EnableOriginalValue" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="Direction" type="direction"&gt;NotSet&lt;/property&gt;
+        &lt;property name="ServerRender" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"&gt;Html, TabularView, Hidden, Mobile&lt;/property&gt;
+        &lt;property name="AllowConnect" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="ListName" type="string"&gt;&lt;/property&gt;
+        &lt;property name="ListDisplayName" type="string" /&gt;
+        &lt;property name="AllowZoneChange" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="ChromeState" type="chromestate"&gt;Normal&lt;/property&gt;
+        &lt;property name="DisableSaveAsNewViewButton" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="ViewFlag" type="string" /&gt;
+        &lt;property name="DataSourceID" type="string" /&gt;
+        &lt;property name="ExportMode" type="exportmode"&gt;All&lt;/property&gt;
+        &lt;property name="AutoRefresh" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="FireInitialRow" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="AllowEdit" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="Description" type="string" /&gt;
+        &lt;property name="HelpMode" type="helpmode"&gt;Modeless&lt;/property&gt;
+        &lt;property name="BaseXsltHashKey" type="string" null="true" /&gt;
+        &lt;property name="AllowMinimize" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="CacheXslTimeOut" type="int"&gt;86400&lt;/property&gt;
+        &lt;property name="ChromeType" type="chrometype"&gt;Default&lt;/property&gt;
+        &lt;property name="Xsl" type="string" null="true" /&gt;
+        &lt;property name="JSLink" type="string" null="true" /&gt;
+        &lt;property name="CatalogIconImageUrl" type="string"&gt;/_layouts/15/images/itgen.png?rev=23&lt;/property&gt;
+        &lt;property name="SampleData" type="string" null="true" /&gt;
+        &lt;property name="UseSQLDataSourcePaging" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="TitleIconImageUrl" type="string" /&gt;
+        &lt;property name="PageSize" type="int"&gt;-1&lt;/property&gt;
+        &lt;property name="ShowTimelineIfAvailable" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="Width" type="string" /&gt;
+        &lt;property name="DataFields" type="string" /&gt;
+        &lt;property name="Hidden" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="Title" type="string" /&gt;
+        &lt;property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"&gt;PAGE_NORMALVIEW&lt;/property&gt;
+        &lt;property name="DataSourcesString" type="string" /&gt;
+        &lt;property name="AllowClose" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="InplaceSearchEnabled" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="WebId" type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"&gt;00000000-0000-0000-0000-000000000000&lt;/property&gt;
+        &lt;property name="Height" type="string" /&gt;
+        &lt;property name="GhostedXslLink" type="string"&gt;main.xsl&lt;/property&gt;
+        &lt;property name="DisableViewSelectorMenu" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="DisplayName" type="string" /&gt;
+        &lt;property name="IsClientRender" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="XmlDefinition" type="string"&gt;&amp;lt;View Name="{226AFFEE-42C6-41A7-B88D-5D4E6E599D8C}" MobileView="TRUE" Type="HTML" Hidden="TRUE" DisplayName="" Url="/SitePages/tessearch.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23" &amp;gt;&amp;lt;Query&amp;gt;&amp;lt;OrderBy&amp;gt;&amp;lt;FieldRef Name="ID"/&amp;gt;&amp;lt;/OrderBy&amp;gt;&amp;lt;/Query&amp;gt;&amp;lt;ViewFields&amp;gt;&amp;lt;FieldRef Name="LinkTitle"/&amp;gt;&amp;lt;FieldRef Name="Tm_IncomeRequestDeclarantAddress"/&amp;gt;&amp;lt;FieldRef Name="Tm_IncomeRequestTrusteeAddresses"/&amp;gt;&amp;lt;/ViewFields&amp;gt;&amp;lt;RowLimit Paged="TRUE"&amp;gt;30&amp;lt;/RowLimit&amp;gt;&amp;lt;Aggregations Value="Off"/&amp;gt;&amp;lt;JSLink&amp;gt;clienttemplates.js&amp;lt;/JSLink&amp;gt;&amp;lt;XslLink Default="TRUE"&amp;gt;main.xsl&amp;lt;/XslLink&amp;gt;&amp;lt;Toolbar Type="Standard"/&amp;gt;&amp;lt;/View&amp;gt;&lt;/property&gt;
+        &lt;property name="InitialAsyncDataFetch" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="AllowHide" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="ParameterBindings" type="string"&gt;
+  &amp;lt;ParameterBinding Name="dvt_sortdir" Location="Postback;Connection"/&amp;gt;
+            &amp;lt;ParameterBinding Name="dvt_sortfield" Location="Postback;Connection"/&amp;gt;
+            &amp;lt;ParameterBinding Name="dvt_startposition" Location="Postback" DefaultValue=""/&amp;gt;
+            &amp;lt;ParameterBinding Name="dvt_firstrow" Location="Postback;Connection"/&amp;gt;
+            &amp;lt;ParameterBinding Name="OpenMenuKeyAccessible" Location="Resource(wss,OpenMenuKeyAccessible)" /&amp;gt;
+            &amp;lt;ParameterBinding Name="open_menu" Location="Resource(wss,open_menu)" /&amp;gt;
+            &amp;lt;ParameterBinding Name="select_deselect_all" Location="Resource(wss,select_deselect_all)" /&amp;gt;
+            &amp;lt;ParameterBinding Name="idPresEnabled" Location="Resource(wss,idPresEnabled)" /&amp;gt;&amp;lt;ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" /&amp;gt;&amp;lt;ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" /&amp;gt;&lt;/property&gt;
+        &lt;property name="DataSourceMode" type="Microsoft.SharePoint.WebControls.SPDataSourceMode, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"&gt;List&lt;/property&gt;
+        &lt;property name="AutoRefreshInterval" type="int"&gt;60&lt;/property&gt;
+        &lt;property name="AsyncRefresh" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="HelpUrl" type="string" /&gt;
+        &lt;property name="MissingAssembly" type="string"&gt;Cannot import this Web Part.&lt;/property&gt;
+        &lt;property name="XslLink" type="string" null="true" /&gt;
+        &lt;property name="SelectParameters" type="string" /&gt;
+      &lt;/properties&gt;
+    &lt;/data&gt;
+  &lt;/webPart&gt;
+&lt;/webParts&gt;</value>
+  </data>
+  <data name="LicenseFilterWebPartXml" xml:space="preserve">
+    <value>&lt;webParts&gt;
+  &lt;webPart xmlns="http://schemas.microsoft.com/WebPart/v3"&gt;
+    &lt;metaData&gt;
+      &lt;type name="TM.SP.AppPages.LicenseFilterWebPart, TM.SP.AppPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=63e92b7beac312db" /&gt;
+      &lt;importErrorMessage&gt;Невозможно импортироватьве часть Фильтрация разрешений.&lt;/importErrorMessage&gt;
+    &lt;/metaData&gt;
+    &lt;data&gt;
+      &lt;properties&gt;
+        &lt;property name="ExportMode" type="exportmode"&gt;All&lt;/property&gt;
+        &lt;property name="HelpUrl" type="string" /&gt;
+        &lt;property name="Hidden" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="Description" type="string"&gt;Фильтрация разрешений&lt;/property&gt;
+        &lt;property name="CatalogIconImageUrl" type="string"&gt;/_layouts/15/images/TaxoMotor/WebPartIcon_LicenseFilterWebPart.gif&lt;/property&gt;
+        &lt;property name="Title" type="string"&gt;Фильтрация разрешений&lt;/property&gt;
+        &lt;property name="AllowHide" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="AllowMinimize" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="AllowZoneChange" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="TitleUrl" type="string" /&gt;
+        &lt;property name="ChromeType" type="chrometype"&gt;None&lt;/property&gt;
+        &lt;property name="AllowConnect" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="Width" type="unit" /&gt;
+        &lt;property name="View" type="string"&gt;FilterView&lt;/property&gt;
+        &lt;property name="HelpMode" type="helpmode"&gt;Navigate&lt;/property&gt;
+        &lt;property name="Height" type="unit" /&gt;
+        &lt;property name="AllowEdit" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="TitleIconImageUrl" type="string"&gt;/_layouts/15/images/TaxoMotor/WebPartIcon_LicenseFilterWebPart.gif&lt;/property&gt;
+        &lt;property name="Direction" type="direction"&gt;NotSet&lt;/property&gt;
+        &lt;property name="AllowClose" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="ChromeState" type="chromestate"&gt;Normal&lt;/property&gt;
+      &lt;/properties&gt;
+    &lt;/data&gt;
+  &lt;/webPart&gt;
+&lt;/webParts&gt;</value>
+  </data>
+  <data name="LicenseMoListViewXml" xml:space="preserve">
+    <value>&lt;webParts&gt;
+  &lt;webPart xmlns="http://schemas.microsoft.com/WebPart/v3"&gt;
+    &lt;metaData&gt;
+      &lt;type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" /&gt;
+      &lt;importErrorMessage&gt;Невозможно импортировать эту веб-часть.&lt;/importErrorMessage&gt;
+    &lt;/metaData&gt;
+    &lt;data&gt;
+      &lt;properties&gt;
+        &lt;property name="ShowWithSampleData" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="Default" type="string" /&gt;
+        &lt;property name="NoDefaultStyle" type="string" null="true" /&gt;
+        &lt;property name="CacheXslStorage" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="ViewContentTypeId" type="string" /&gt;
+        &lt;property name="XmlDefinitionLink" type="string" /&gt;
+        &lt;property name="ManualRefresh" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="ListUrl" type="string" /&gt;
+        &lt;property name="ListId" type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"&gt;&lt;/property&gt;
+        &lt;property name="TitleUrl" type="string"&gt;/Lists/LicenseList&lt;/property&gt;
+        &lt;property name="EnableOriginalValue" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="Direction" type="direction"&gt;NotSet&lt;/property&gt;
+        &lt;property name="ServerRender" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="ViewFlags" type="Microsoft.SharePoint.SPViewFlags, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"&gt;Html, TabularView, Hidden, Recursive, FilesOnly&lt;/property&gt;
+        &lt;property name="AllowConnect" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="ListName" type="string"&gt;&lt;/property&gt;
+        &lt;property name="ListDisplayName" type="string" /&gt;
+        &lt;property name="AllowZoneChange" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="ChromeState" type="chromestate"&gt;Normal&lt;/property&gt;
+        &lt;property name="DisableSaveAsNewViewButton" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="ViewFlag" type="string" /&gt;
+        &lt;property name="DataSourceID" type="string" /&gt;
+        &lt;property name="ExportMode" type="exportmode"&gt;All&lt;/property&gt;
+        &lt;property name="AutoRefresh" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="FireInitialRow" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="AllowEdit" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="Description" type="string" /&gt;
+        &lt;property name="HelpMode" type="helpmode"&gt;Modeless&lt;/property&gt;
+        &lt;property name="BaseXsltHashKey" type="string" null="true" /&gt;
+        &lt;property name="AllowMinimize" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="CacheXslTimeOut" type="int"&gt;86400&lt;/property&gt;
+        &lt;property name="ChromeType" type="chrometype"&gt;None&lt;/property&gt;
+        &lt;property name="Xsl" type="string" null="true" /&gt;
+        &lt;property name="JSLink" type="string"&gt;~site/ProjectScripts/LicenseViewCSR.js&lt;/property&gt;
+        &lt;property name="CatalogIconImageUrl" type="string"&gt;/_layouts/15/images/itgen.png?rev=23&lt;/property&gt;
+        &lt;property name="SampleData" type="string" null="true" /&gt;
+        &lt;property name="UseSQLDataSourcePaging" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="TitleIconImageUrl" type="string" /&gt;
+        &lt;property name="PageSize" type="int"&gt;-1&lt;/property&gt;
+        &lt;property name="ShowTimelineIfAvailable" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="Width" type="string" /&gt;
+        &lt;property name="DataFields" type="string" /&gt;
+        &lt;property name="Hidden" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="Title" type="string" /&gt;
+        &lt;property name="PageType" type="Microsoft.SharePoint.PAGETYPE, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"&gt;PAGE_NORMALVIEW&lt;/property&gt;
+        &lt;property name="DataSourcesString" type="string" /&gt;
+        &lt;property name="AllowClose" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="InplaceSearchEnabled" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="WebId" type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"&gt;00000000-0000-0000-0000-000000000000&lt;/property&gt;
+        &lt;property name="Height" type="string" /&gt;
+        &lt;property name="GhostedXslLink" type="string"&gt;main.xsl&lt;/property&gt;
+        &lt;property name="DisableViewSelectorMenu" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="DisplayName" type="string" /&gt;
+        &lt;property name="IsClientRender" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="XmlDefinition" type="string"&gt;&amp;lt;View Name="{254FE237-81A0-47AB-865A-3DC88BBD2F4B}" Type="HTML" Hidden="TRUE" Scope="Recursive" DisplayName="" Url="/ProjectSitePages/LicenseMo.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=23" &amp;gt;&amp;lt;Query&amp;gt;&amp;lt;OrderBy&amp;gt;&amp;lt;FieldRef Name="Title"/&amp;gt;&amp;lt;/OrderBy&amp;gt;&amp;lt;Where&amp;gt;&amp;lt;Eq&amp;gt;&amp;lt;FieldRef Name="Tm_LicenseIsMo"/&amp;gt;&amp;lt;Value Type="Boolean"&amp;gt;1&amp;lt;/Value&amp;gt;&amp;lt;/Eq&amp;gt;&amp;lt;/Where&amp;gt;&amp;lt;/Query&amp;gt;&amp;lt;ViewFields&amp;gt;&amp;lt;FieldRef Name="LinkTitle"/&amp;gt;&amp;lt;FieldRef Name="Tm_OrgOgrn"/&amp;gt;&amp;lt;FieldRef Name="Tm_TaxiStateNumber"/&amp;gt;&amp;lt;FieldRef Name="Tm_BlankSeries"/&amp;gt;&amp;lt;FieldRef Name="Tm_BlankNo"/&amp;gt;&amp;lt;FieldRef Name="Tm_LicenseOutputDate"/&amp;gt;&amp;lt;FieldRef Name="Tm_TaxiBrand"/&amp;gt;&amp;lt;FieldRef Name="Tm_TaxiModel"/&amp;gt;&amp;lt;FieldRef Name="Tm_TaxiYear"/&amp;gt;&amp;lt;FieldRef Name="Tm_OrganizationName"/&amp;gt;&amp;lt;FieldRef Name="Tm_LicenseStatus"/&amp;gt;&amp;lt;FieldRef Name="Tm_TaxiLastToDate"/&amp;gt;&amp;lt;FieldRef Name="Tm_LicenseFromDate"/&amp;gt;&amp;lt;FieldRef Name="Tm_LicenseTillDate"/&amp;gt;&amp;lt;FieldRef Name="Tm_LicenseIsMo"/&amp;gt;&amp;lt;FieldRef Name="_x0421__x0441__x044b__x043b__x04"/&amp;gt;&amp;lt;/ViewFields&amp;gt;&amp;lt;RowLimit Paged="TRUE"&amp;gt;20&amp;lt;/RowLimit&amp;gt;&amp;lt;Aggregations&amp;gt;Off&amp;lt;/Aggregations&amp;gt;&amp;lt;JSLink&amp;gt;clienttemplates.js | ~site/ProjectScripts/LicenseViewCSR.js&amp;lt;/JSLink&amp;gt;&amp;lt;XslLink Default="TRUE"&amp;gt;main.xsl&amp;lt;/XslLink&amp;gt;&amp;lt;Toolbar Type="Standard"/&amp;gt;&amp;lt;/View&amp;gt;&lt;/property&gt;
+        &lt;property name="InitialAsyncDataFetch" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="AllowHide" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="ParameterBindings" type="string"&gt;
+&amp;lt;ParameterBinding Name="dvt_sortdir" Location="Postback;Connection" /&amp;gt;&amp;lt;ParameterBinding Name="dvt_sortfield" Location="Postback;Connection" /&amp;gt;&amp;lt;ParameterBinding Name="dvt_startposition" Location="Postback" DefaultValue="" /&amp;gt;&amp;lt;ParameterBinding Name="dvt_firstrow" Location="Postback;Connection" /&amp;gt;&amp;lt;ParameterBinding Name="OpenMenuKeyAccessible" Location="Resource(wss,OpenMenuKeyAccessible)" /&amp;gt;&amp;lt;ParameterBinding Name="open_menu" Location="Resource(wss,open_menu)" /&amp;gt;&amp;lt;ParameterBinding Name="select_deselect_all" Location="Resource(wss,select_deselect_all)" /&amp;gt;&amp;lt;ParameterBinding Name="idPresEnabled" Location="Resource(wss,idPresEnabled)" /&amp;gt;&amp;lt;ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" /&amp;gt;&amp;lt;ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" /&amp;gt;&lt;/property&gt;
+        &lt;property name="DataSourceMode" type="Microsoft.SharePoint.WebControls.SPDataSourceMode, Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"&gt;List&lt;/property&gt;
+        &lt;property name="AutoRefreshInterval" type="int"&gt;60&lt;/property&gt;
+        &lt;property name="AsyncRefresh" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="HelpUrl" type="string" /&gt;
+        &lt;property name="MissingAssembly" type="string"&gt;Невозможно импортировать эту веб-часть.&lt;/property&gt;
+        &lt;property name="XslLink" type="string" null="true" /&gt;
+        &lt;property name="SelectParameters" type="string" /&gt;
+      &lt;/properties&gt;
+    &lt;/data&gt;
+  &lt;/webPart&gt;
+&lt;/webParts&gt;</value>
+  </data>
+  <data name="SPFilterListViewXml" xml:space="preserve">
+    <value>&lt;webParts&gt;
+  &lt;webPart xmlns="http://schemas.microsoft.com/WebPart/v3"&gt;
+    &lt;metaData&gt;
+      &lt;type name="ListViewFilter.WebParts.SPListViewFilter.SPListViewFilter, ListViewFilter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c2efc42ca9f77dc7" /&gt;
+      &lt;importErrorMessage&gt;Cannot import this Web Part.&lt;/importErrorMessage&gt;
+    &lt;/metaData&gt;
+    &lt;data&gt;
+      &lt;properties&gt;
+        &lt;property name="AllowZoneChange" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="HelpUrl" type="string" /&gt;
+        &lt;property name="Hidden" type="bool"&gt;False&lt;/property&gt;
+        &lt;property name="MissingAssembly" type="string"&gt;Cannot import this Web Part.&lt;/property&gt;
+        &lt;property name="Description" type="string"&gt;Configurable list filter&lt;/property&gt;
+        &lt;property name="AllowHide" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="AllowMinimize" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="Title" type="string"&gt;SPListViewFilter 2.0&lt;/property&gt;
+        &lt;property name="TitleUrl" type="string" /&gt;
+        &lt;property name="ExportMode" type="exportmode"&gt;All&lt;/property&gt;
+        &lt;property name="ChromeType" type="chrometype"&gt;None&lt;/property&gt;
+        &lt;property name="AllowConnect" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="Width" type="string" /&gt;
+        &lt;property name="Height" type="string" /&gt;
+        &lt;property name="CatalogIconImageUrl" type="string"&gt;/_layouts/15/images/SPListViewFilter20S/SPListViewFilterWebPart16.gif&lt;/property&gt;
+        &lt;property name="HelpMode" type="helpmode"&gt;Modeless&lt;/property&gt;
+        &lt;property name="AllowEdit" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="TitleIconImageUrl" type="string" /&gt;
+        &lt;property name="Direction" type="direction"&gt;NotSet&lt;/property&gt;
+        &lt;property name="AllowClose" type="bool"&gt;True&lt;/property&gt;
+        &lt;property name="ChromeState" type="chromestate"&gt;Normal&lt;/property&gt;
+      &lt;/properties&gt;
+    &lt;/data&gt;
+  &lt;/webPart&gt;
+&lt;/webParts&gt;</value>
+  </data>
+</root>
