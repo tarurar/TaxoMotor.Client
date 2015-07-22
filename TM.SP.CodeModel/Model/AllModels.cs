@@ -23,6 +23,18 @@ namespace TM.SP.CodeModel.Model
             return model;
         }
 
+        public static ModelNode GetTaxomotorStylesModel(ClientContext ctx)
+        {
+            var model = SPMeta2Model.NewWebModel(web =>
+            {
+                const string stylesFolder = @"..\..\..\PostBuildFiles\Styles";
+                var cssDeployer = new FileDeployer(null, web, Lists.TmProjectScripts, stylesFolder);
+                cssDeployer.Deploy();                    
+            });
+
+            return model;
+        }
+
         #endregion
     }
 }

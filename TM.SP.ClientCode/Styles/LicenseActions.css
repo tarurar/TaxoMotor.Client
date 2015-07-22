@@ -1,0 +1,90 @@
+﻿/*Common styles*/
+.input-param {
+    float: left;
+    margin-right: 20px;
+}
+
+.input-param input {
+    display: block;
+    width: 90%;
+}
+
+.input-param select {
+    display: block;
+    width: 90%;
+}
+
+.input-param textarea {
+    display: block;
+    width: 90%;
+}
+
+input-param label {
+    display: block;
+}
+
+.donotfloat {
+    clear: both;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.alignright {
+    float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+#s4-ribbonrow, #suiteBar { 
+    display : none; 
+}
+
+.error-list table{
+    font-size: 12px;
+    color: #333333;
+    width: 100%;
+    border: solid 1px #a9a9a9 !important;
+    border-collapse: collapse;
+}
+
+.error-list table th {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    background-color: red;
+    border: solid 1px #a9a9a9 !important;
+    padding: 8px;
+    text-align: left;
+}
+
+.error-list table tr {
+    background-color: #ffffff;
+    border: solid 1px #a9a9a9 !important;
+}
+
+.error-list table tr td {
+    font-size: 12px;
+    border: solid 1px #a9a9a9 !important;
+    padding: 8px;
+}
+
+object.hiddenObject
+{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    border-width: 0;
+    max-width: 0;
+    max-height: 0;
+}
+
+#contentBox {
+    margin-left: 0 !important;
+}

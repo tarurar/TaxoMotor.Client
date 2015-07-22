@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using CommandLine;
 using NLog;
 using Microsoft.SharePoint.Client;
@@ -66,7 +67,18 @@ namespace TM.SP.CodeModelDeploy
                     options.WindowsDomain);
                 var pService = new CSOMProvisionService();
 
+                #region Parallel deployment
+                /*
+                 * Parallel.Invoke(
+                    () => pService.DeployModel(WebModelHost.FromClientContext(ctx), AllModels.GetTaxomotorScriptsModel(ctx)),
+                    () => pService.DeployModel(WebModelHost.FromClientContext(ctx), AllModels.GetTaxomotorStylesModel(ctx)));
+                 */
+                # endregion
+
+                #region Sequental deployment
                 pService.DeployModel(WebModelHost.FromClientContext(ctx), AllModels.GetTaxomotorScriptsModel(ctx));
+                pService.DeployModel(WebModelHost.FromClientContext(ctx), AllModels.GetTaxomotorStylesModel(ctx));
+                #endregion
             }
         }
 

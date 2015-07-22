@@ -36,6 +36,12 @@
     <Content Include="Scripts\TaxiBlankNoEditor.js" />
     <Content Include="Scripts\TaxiVinEditor.js" />
     <Content Include="Scripts\_excludeDeploy.txt" />
+    <Content Include="Styles\IncomeRequestActions.css" />
+    <Content Include="Styles\LicenseActions.css" />
+    <Content Include="Styles\licenseSearchModel.css" />
+    <Content Include="Styles\ProgressDlg.css" />
+    <Content Include="Styles\TaxiActions.css" />
+    <Content Include="Styles\_excludeDeploy.txt" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -95,8 +101,13 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <PropertyGroup>
     <PostBuildEvent>SET scriptsTarget="$(SolutionDir)PostBuildFiles\Scripts"
+SET stylesTarget="$(SolutionDir)PostBuildFiles\Styles"
+
 IF EXIST %25scriptsTarget%25 ( rd /q /s %25scriptsTarget%25 ) ELSE (mkdir %25scriptsTarget%25)
-xcopy "$(ProjectDir)Scripts\*.*" %25scriptsTarget%25 /s /e /y /i /exclude:$(ProjectDir)Scripts\_excludeDeploy.txt</PostBuildEvent>
+IF EXIST %25stylesTarget%25 ( rd /q /s %25stylesTarget%25 ) ELSE (mkdir %25stylesTarget%25)
+
+xcopy "$(ProjectDir)Scripts\*.*" %25scriptsTarget%25 /s /e /y /i /exclude:$(ProjectDir)Scripts\_excludeDeploy.txt
+xcopy "$(ProjectDir)Styles\*.*" %25stylesTarget%25 /s /e /y /i /exclude:$(ProjectDir)Styles\_excludeDeploy.txt</PostBuildEvent>
   </PropertyGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
