@@ -16,16 +16,30 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app.css" />
-    <Content Include="index.html" />
+    <Content Include="Scripts\CancellationLicense.js" />
+    <Content Include="Scripts\DenyIncomeRequest.js" />
+    <Content Include="Scripts\DenyTaxi.js" />
+    <Content Include="Scripts\IncomeRequestBcsFields.js" />
+    <Content Include="Scripts\IncomeRequestHelper.js" />
+    <Content Include="Scripts\LicenseDisableGibdd.js" />
+    <Content Include="Scripts\LicenseMakeObsolete.js" />
+    <Content Include="Scripts\licenseSearchModel.js" />
+    <Content Include="Scripts\LicenseViewCSR.js" />
+    <Content Include="Scripts\ProgressDlg.js" />
+    <Content Include="Scripts\RenewalLicense.js" />
+    <Content Include="Scripts\RequestAccountRendering.js" />
+    <Content Include="Scripts\SuspendLicense.js" />
+    <Content Include="Scripts\TaxiBlankNoEditor.js" />
+    <Content Include="Scripts\TaxiVinEditor.js" />
+    <Content Include="Scripts\_excludeDeploy.txt" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="packages.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -33,8 +47,16 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Scripts\" />
+    <TypeScriptCompile Include="Scripts\CryptoProTs.ts" />
+    <TypeScriptCompile Include="Scripts\CurrentLicense.ts" />
+    <TypeScriptCompile Include="Scripts\EntityHelper.ts" />
+    <TypeScriptCompile Include="Scripts\IncomeRequestEntityHelper.ts" />
+    <TypeScriptCompile Include="Scripts\LicenseEntityHelper.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\knockout\knockout.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\sharepoint\SharePoint.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
@@ -71,4 +93,16 @@
     <TypeScriptSourceMap>false</TypeScriptSourceMap>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>SET scriptsTarget="$(SolutionDir)PostBuildFiles\Scripts"
+IF EXIST %25scriptsTarget%25 ( rd /q /s %25scriptsTarget%25 ) ELSE (mkdir %25scriptsTarget%25)
+xcopy "$(ProjectDir)Scripts\*.*" %25scriptsTarget%25 /s /e /y /i /exclude:$(ProjectDir)Scripts\_excludeDeploy.txt</PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
 </Project>

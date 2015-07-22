@@ -1,4 +1,5 @@
-﻿using Microsoft.SharePoint.Client;
+﻿using System.Net.Mime;
+using Microsoft.SharePoint.Client;
 using SPMeta2.Models;
 using SPMeta2.Syntax.Default;
 using TM.SP.DataModel;
@@ -14,7 +15,8 @@ namespace TM.SP.CodeModel.Model
         {
             var model = SPMeta2Model.NewWebModel(web =>
             {
-                var jsDeployer = new FileDeployer(null, web, Lists.TmProjectScripts, "");
+                const string scriptsFolder = @"..\..\..\PostBuildFiles\Scripts";
+                var jsDeployer = new FileDeployer(null, web, Lists.TmProjectScripts, scriptsFolder);
                 jsDeployer.Deploy();
             });
 
