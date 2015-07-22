@@ -35,6 +35,18 @@ namespace TM.SP.CodeModel.Model
             return model;
         }
 
+        public static ModelNode GetTaxomotorPagesModel(ClientContext ctx)
+        {
+            var model = SPMeta2Model.NewWebModel(web =>
+            {
+                const string pagesFolder = @"..\..\..\PostBuildFiles\Pages";
+                var pagesDeployer = new FileDeployer(null, web, Lists.TmProjectSitePages, pagesFolder);
+                pagesDeployer.Deploy();
+            });
+
+            return model;
+        }
+
         #endregion
     }
 }
