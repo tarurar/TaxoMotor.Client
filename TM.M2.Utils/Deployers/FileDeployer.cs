@@ -1,12 +1,11 @@
-﻿using Microsoft.SharePoint.Client;
-using SPMeta2.Definitions;
+﻿using SPMeta2.Definitions;
 using SPMeta2.Models;
 using SPMeta2.Syntax.Default;
 using System.IO;
 using System.Linq;
 using File = System.IO.File;
 
-namespace TM.SP.CodeModel.Deployers
+namespace TM.M2.Utils.Deployers
 {
     public class FileDeployer : IDeployer
     {
@@ -34,7 +33,7 @@ namespace TM.SP.CodeModel.Deployers
             parent.AddModuleFiles(
                 Directory.EnumerateFiles(path)
                     .Select(fileName =>
-                        new ModuleFileDefinition()
+                        new ModuleFileDefinition
                         {
                             FileName = Path.GetFileName(fileName),
                             Content = File.ReadAllBytes(fileName)
@@ -44,7 +43,7 @@ namespace TM.SP.CodeModel.Deployers
             {
                 string folderName = name;
                 parent.AddFolder(
-                    new FolderDefinition() { Name = name.Remove(0, name.LastIndexOf('\\') + 1) },
+                    new FolderDefinition { Name = name.Remove(0, name.LastIndexOf('\\') + 1) },
                     folder => ProcessDirectory(folderName, folder));
             }
         }

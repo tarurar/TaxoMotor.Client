@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EA8D946A-3E89-41D7-B83C-E063B0B866F0}</ProjectGuid>
+    <ProjectGuid>{E449E308-BEBD-481F-AE63-9E99C13C1FF7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TM.SP.CodeModel</RootNamespace>
-    <AssemblyName>TM.SP.CodeModel</AssemblyName>
+    <RootNamespace>TM.M2.Utils</RootNamespace>
+    <AssemblyName>TM.M2.Utils</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,20 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.SharePoint.Client, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client\v4.0_15.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.Client.Runtime\v4.0_15.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="SPMeta2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d71faae3bf28531a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="SPMeta2">
       <HintPath>..\..\spmeta2\SPMeta2\SPMeta2\bin\Debug\SPMeta2.dll</HintPath>
     </Reference>
-    <Reference Include="SPMeta2.Syntax.Default, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d71faae3bf28531a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="SPMeta2.Syntax.Default">
       <HintPath>..\..\spmeta2\SPMeta2\SPMeta2.Syntax.Default\bin\Debug\SPMeta2.Syntax.Default.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -55,18 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\AllModels.cs" />
+    <Compile Include="Deployers\FileDeployer.cs" />
+    <Compile Include="Deployers\IDeployer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TM.M2.Utils\TM.M2.Utils.csproj">
-      <Project>{e449e308-bebd-481f-ae63-9e99c13c1ff7}</Project>
-      <Name>TM.M2.Utils</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TM.SP.DataModel\TM.SP.DataModel.csproj">
-      <Project>{f3af0c59-f72c-4992-b2b3-93c71ada489c}</Project>
-      <Name>TM.SP.DataModel</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

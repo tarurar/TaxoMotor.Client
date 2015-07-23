@@ -1,9 +1,8 @@
-﻿using System.Net.Mime;
-using Microsoft.SharePoint.Client;
+﻿using Microsoft.SharePoint.Client;
 using SPMeta2.Models;
 using SPMeta2.Syntax.Default;
 using TM.SP.DataModel;
-using TM.SP.CodeModel.Deployers;
+using TM.M2.Utils.Deployers;
 
 namespace TM.SP.CodeModel.Model
 {
