@@ -13,10 +13,6 @@
 <asp:Content ID="AddPageHead" ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
     <SharePoint:CssRegistration runat="server" ID="CssRegistration1" Name="TM.SP.Customizations/themes/base/core.css"></SharePoint:CssRegistration>
     <SharePoint:CssRegistration runat="server" ID="CssRegistration3" Name="TM.SP.Customizations/themes/base/theme.css"></SharePoint:CssRegistration>
-    
-    <script type="text/javascript">
-        document.write(TM.SP.GetVersionedStyleMarkup('/ProjectScripts/TaxiActions.css'));
-    </script>
 </asp:Content>
 
 <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -57,6 +53,7 @@
     </div>
     
     <script type="text/javascript">
-        document.write(TM.SP.GetVersionedScriptMarkup('/ProjectScripts/TaxiBlankNoEditor.js'));
+        document.write(TM.SP_.GetVersionedStyleMarkup('/ProjectScripts/TaxiActions.css'));
+        document.write(TM.SP_.GetVersionedScriptMarkup('/ProjectScripts/TaxiBlankNoEditor.js'));
     </script>
 </asp:Content>

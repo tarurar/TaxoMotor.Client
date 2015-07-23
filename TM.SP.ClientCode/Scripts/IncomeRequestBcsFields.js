@@ -121,7 +121,7 @@
     tm.SP.IncomeRequestDeclarantForms = {};
     tm.SP.IncomeRequestTrusteeForms = {};
 
-    tm.SP.GetListDefaultNewFormUrl("RequestAccountBCSList", function (data) {
+    tm.SP_.GetListDefaultNewFormUrl("RequestAccountBCSList", function (data) {
         tm.SP.IncomeRequestDeclarantForms.NewUrl = data;
         $("#addDeclarant").attr("onclick", "TM.SP.ShowRequestAccountDlg();");
     }, function () {
@@ -130,7 +130,7 @@
         }
     });
 
-    tm.SP.GetListDefaultEditFormUrl("RequestAccountBCSList", function (data) {
+    tm.SP_.GetListDefaultEditFormUrl("RequestAccountBCSList", function (data) {
         var url = data;
         tm.SP.IncomeRequestDeclarantForms.EditUrl = url;
     }, function () {
@@ -139,7 +139,7 @@
         }
     });
 
-    tm.SP.GetListDefaultNewFormUrl("RequestContactBCSList", function (data) {
+    tm.SP_.GetListDefaultNewFormUrl("RequestContactBCSList", function (data) {
         tm.SP.IncomeRequestTrusteeForms.NewUrl = data;
         $("#addTrustee").attr("onclick", "TM.SP.ShowRequestContactDlg();");
     }, function () {
@@ -148,7 +148,7 @@
         }
     });
 
-    tm.SP.GetListDefaultEditFormUrl("RequestContactBCSList", function (data) {
+    tm.SP_.GetListDefaultEditFormUrl("RequestContactBCSList", function (data) {
         var url = data;
         tm.SP.IncomeRequestTrusteeForms.EditUrl = url;
     }, function () {

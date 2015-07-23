@@ -73,6 +73,7 @@
     <TypeScriptCompile Include="Scripts\EntityHelper.ts" />
     <TypeScriptCompile Include="Scripts\IncomeRequestEntityHelper.ts" />
     <TypeScriptCompile Include="Scripts\LicenseEntityHelper.ts" />
+    <TypeScriptCompile Include="Scripts\tm.sp.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\knockout\knockout.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\sharepoint\SharePoint.d.ts" />

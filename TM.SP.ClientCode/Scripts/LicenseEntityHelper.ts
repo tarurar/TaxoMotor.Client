@@ -178,7 +178,7 @@ module TM.SP_.License {
                 options.dialogReturnValueCallback = (dialogResult, returnValue) => {
                     if (dialogResult == SP.UI.DialogResult.OK) {
                         if (returnValue == null) {
-                            TM["SP"].showIconNotification('Признак "Устаревшие данные" изменен', '_layouts/15/images/kpinormal-0.gif', true);
+                            TM.SP_.showIconNotification('Признак "Устаревшие данные" изменен', '_layouts/15/images/kpinormal-0.gif', true);
                             debugger;
                             setTimeout(() => {
                                 var gobackBtn = $('input[type=button][name*="GoBack"]');
@@ -188,7 +188,7 @@ module TM.SP_.License {
                             }, 2000);
                         }
                         else if (returnValue == -1) {
-                            TM["SP"].showIconNotification('В процессе установки признака возникли ошибки', '_layouts/15/images/kpinormal-2.gif', true);
+                            TM.SP_.showIconNotification('В процессе установки признака возникли ошибки', '_layouts/15/images/kpinormal-2.gif', true);
                             setTimeout(() => {
                                 SP.UI.ModalDialog.RefreshPage(SP.UI.DialogResult.cancel);
                             }, 2000);

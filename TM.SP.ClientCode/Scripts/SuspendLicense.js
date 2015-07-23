@@ -49,8 +49,8 @@
 
         self.BuildGetXmlJson = function() {
             var itemId = JSRequest.QueryString.ItemId;
-            var dateFrom = TM.SP.GetLocalTime(self.Params().DateFrom());
-            var dateTill = self.Params().DateTill() ? TM.SP.GetLocalTime(self.Params().DateTill()) : 0;
+            var dateFrom = TM.SP_.GetLocalTime(self.Params().DateFrom());
+            var dateTill = self.Params().DateTill() ? TM.SP_.GetLocalTime(self.Params().DateTill()) : 0;
             var reason = self.Params().ActionReason();
 
             return '{' +
@@ -63,8 +63,8 @@
 
         self.BuildSaveSignedJson = function(signatureValue) {
             var itemId = JSRequest.QueryString.ItemId;
-            var dateFrom = TM.SP.GetLocalTime(self.Params().DateFrom());
-            var dateTill = self.Params().DateTill() ? TM.SP.GetLocalTime(self.Params().DateTill()) : 0;
+            var dateFrom = TM.SP_.GetLocalTime(self.Params().DateFrom());
+            var dateTill = self.Params().DateTill() ? TM.SP_.GetLocalTime(self.Params().DateTill()) : 0;
             var reason = self.Params().ActionReason();
 
             return '{' +

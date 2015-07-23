@@ -14,11 +14,6 @@
     <SharePoint:CssRegistration runat="server" ID="CssRegistration1" Name="TM.SP.Customizations/themes/base/core.css"></SharePoint:CssRegistration>
     <SharePoint:CssRegistration runat="server" ID="CssRegistration3" Name="TM.SP.Customizations/themes/base/theme.css"></SharePoint:CssRegistration>
     
-    <script type="text/javascript">
-        document.write(TM.SP.GetVersionedStyleMarkup('/ProjectScripts/IncomeRequestActions.css'));
-        document.write(TM.SP.GetVersionedScriptMarkup('/ProjectScripts/CryptoProTs.js'));
-    </script>
-
     <object id="cadesplugin" type="application/x-cades" class="hiddenObject"></object>
     <object id='certEnrollClassFactory' classid='clsid:884e2049-217d-11da-b2a4-000e7bbb2b09' class="hiddenObject"></object>
 </asp:Content>
@@ -107,6 +102,8 @@
     </div>
 
     <script type="text/javascript">
-        document.write(TM.SP.GetVersionedScriptMarkup('/ProjectScripts/DenyIncomeRequest.js'));
+        document.write(TM.SP_.GetVersionedStyleMarkup('/ProjectScripts/IncomeRequestActions.css'));
+        document.write(TM.SP_.GetVersionedScriptMarkup('/ProjectScripts/CryptoProTs.js'));
+        document.write(TM.SP_.GetVersionedScriptMarkup('/ProjectScripts/DenyIncomeRequest.js'));
     </script>
 </asp:Content>

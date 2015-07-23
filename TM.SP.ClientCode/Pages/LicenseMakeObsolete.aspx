@@ -15,11 +15,6 @@
     <SharePoint:CssRegistration runat="server" ID="CssRegistration2" Name="TM.SP.Customizations/themes/base/datepicker.css"></SharePoint:CssRegistration>
     <SharePoint:CssRegistration runat="server" ID="CssRegistration3" Name="TM.SP.Customizations/themes/base/theme.css"></SharePoint:CssRegistration>
     
-    <script type="text/javascript">
-        document.write(TM.SP.GetVersionedStyleMarkup('/ProjectScripts/LicenseActions.css'));
-        document.write(TM.SP.GetVersionedScriptMarkup('/ProjectScripts/CryptoProTs.js'));
-    </script>
-
     <object id="cadesplugin" type="application/x-cades" class="hiddenObject"></object>
     <object id='certEnrollClassFactory' classid='clsid:884e2049-217d-11da-b2a4-000e7bbb2b09' class="hiddenObject"></object>
 </asp:Content>
@@ -68,6 +63,8 @@
     </div>
 
     <script type="text/javascript">
-        document.write(TM.SP.GetVersionedScriptMarkup('/ProjectScripts/LicenseMakeObsolete.js'));
+        document.write(TM.SP_.GetVersionedStyleMarkup('/ProjectScripts/LicenseActions.css'));
+        document.write(TM.SP_.GetVersionedScriptMarkup('/ProjectScripts/CryptoProTs.js'));
+        document.write(TM.SP_.GetVersionedScriptMarkup('/ProjectScripts/LicenseMakeObsolete.js'));
     </script>
 </asp:Content>
