@@ -46,6 +46,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\spmeta2\SPMeta2\SPMeta2.Syntax.Default\bin\Debug\SPMeta2.Syntax.Default.dll</HintPath>
     </Reference>
+    <Reference Include="SPMeta2Contrib.Core">
+      <HintPath>..\..\SPMeta2Contrib\SPMeta2Contrib.Core\bin\Debug\SPMeta2Contrib.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SPMeta2Contrib.Provision">
+      <HintPath>..\..\SPMeta2Contrib\SPMeta2Contrib.Provision\bin\Debug\SPMeta2Contrib.Provision.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,10 +65,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TM.M2.Utils\TM.M2.Utils.csproj">
-      <Project>{e449e308-bebd-481f-ae63-9e99c13c1ff7}</Project>
-      <Name>TM.M2.Utils</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TM.SP.DataModel\TM.SP.DataModel.csproj">
       <Project>{f3af0c59-f72c-4992-b2b3-93c71ada489c}</Project>
       <Name>TM.SP.DataModel</Name>

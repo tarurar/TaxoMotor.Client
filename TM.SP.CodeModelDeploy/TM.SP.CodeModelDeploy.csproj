@@ -62,7 +62,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\spmeta2\SPMeta2\SPMeta2.Syntax.Default\bin\Debug\SPMeta2.Syntax.Default.dll</HintPath>
     </Reference>
+    <Reference Include="SPMeta2Contrib.Core">
+      <HintPath>..\..\SPMeta2Contrib\SPMeta2Contrib.Core\bin\Debug\SPMeta2Contrib.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />

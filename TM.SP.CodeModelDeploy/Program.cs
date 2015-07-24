@@ -1,12 +1,17 @@
 ﻿using System;
-using System.Threading.Tasks;
+using System.Configuration;
 using CommandLine;
 using NLog;
 using Microsoft.SharePoint.Client;
 using System.Net;
+using NLog.Internal;
 using SPMeta2.CSOM.ModelHosts;
 using SPMeta2.CSOM.Services;
+using SPMeta2Contrib.Core.Hash;
+using SPMeta2Contrib.Core.Store;
+using SPMeta2Contrib.Core.StoreProviders;
 using TM.SP.CodeModel.Model;
+using ConfigurationManager = System.Configuration.ConfigurationManager;
 
 namespace TM.SP.CodeModelDeploy
 {
@@ -67,11 +72,22 @@ namespace TM.SP.CodeModelDeploy
                     options.WindowsDomain);
                 var pService = new CSOMProvisionService();
 
-                #region Sequental deployment
-                pService.DeployModel(WebModelHost.FromClientContext(ctx), AllModels.GetTaxomotorScriptsModel(ctx));
-                pService.DeployModel(WebModelHost.FromClientContext(ctx), AllModels.GetTaxomotorStylesModel(ctx));
-                pService.DeployModel(WebModelHost.FromClientContext(ctx), AllModels.GetTaxomotorPagesModel(ctx));
+                var cacheFileName = ConfigurationManager.AppSettings["ProvisionCacheFileName"] ??
+                                "defaultProvisionCache.xml";
+                var provisionFileCache = new FileHashStore(new DictionaryXmlStoreProvider(cacheFileName),
+                    new FileMd5Hasher());
+                provisionFileCache.Load();
+
+                #region deploy models
+                pService.DeployModel(WebModelHost.FromClientContext(ctx),
+                    AllModels.GetTaxomotorScriptsModel(ctx, provisionFileCache));
+                pService.DeployModel(WebModelHost.FromClientContext(ctx),
+                    AllModels.GetTaxomotorStylesModel(ctx, provisionFileCache));
+                pService.DeployModel(WebModelHost.FromClientContext(ctx),
+                    AllModels.GetTaxomotorPagesModel(ctx, provisionFileCache));
                 #endregion
+
+                provisionFileCache.Save();
             }
         }
 

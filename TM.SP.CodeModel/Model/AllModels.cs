@@ -1,8 +1,10 @@
-﻿using Microsoft.SharePoint.Client;
+﻿using System.IO;
+using Microsoft.SharePoint.Client;
 using SPMeta2.Models;
 using SPMeta2.Syntax.Default;
 using TM.SP.DataModel;
-using TM.M2.Utils.Deployers;
+using SPMeta2Contrib.Core.Store;
+using SPMeta2Contrib.Provision.Deployers;
 
 namespace TM.SP.CodeModel.Model
 {
@@ -10,36 +12,42 @@ namespace TM.SP.CodeModel.Model
     {
         #region methods
 
-        public static ModelNode GetTaxomotorScriptsModel(ClientContext ctx)
+        public static ModelNode GetTaxomotorScriptsModel(ClientContext ctx, FileHashStore provisionCache)
         {
             var model = SPMeta2Model.NewWebModel(web =>
             {
-                const string scriptsFolder = @"..\..\..\PostBuildFiles\Scripts";
-                var jsDeployer = new FileDeployer(null, web, Lists.TmProjectScripts, scriptsFolder);
+                string scriptsFolder = Path.GetFullPath(@"..\..\..\PostBuildFiles\Scripts");
+                IDeployer jsDeployer = provisionCache == null
+                    ? new FileDeployer(null, web, Lists.TmProjectScripts, scriptsFolder)
+                    : new FileDeployerCacheable(null, web, Lists.TmProjectScripts, scriptsFolder, provisionCache);
                 jsDeployer.Deploy();
             });
 
             return model;
         }
 
-        public static ModelNode GetTaxomotorStylesModel(ClientContext ctx)
+        public static ModelNode GetTaxomotorStylesModel(ClientContext ctx, FileHashStore provisionCache)
         {
             var model = SPMeta2Model.NewWebModel(web =>
             {
-                const string stylesFolder = @"..\..\..\PostBuildFiles\Styles";
-                var cssDeployer = new FileDeployer(null, web, Lists.TmProjectScripts, stylesFolder);
+                string stylesFolder = Path.GetFullPath(@"..\..\..\PostBuildFiles\Styles");
+                IDeployer cssDeployer = provisionCache == null
+                    ? new FileDeployer(null, web, Lists.TmProjectScripts, stylesFolder)
+                    : new FileDeployerCacheable(null, web, Lists.TmProjectScripts, stylesFolder, provisionCache);
                 cssDeployer.Deploy();                    
             });
 
             return model;
         }
 
-        public static ModelNode GetTaxomotorPagesModel(ClientContext ctx)
+        public static ModelNode GetTaxomotorPagesModel(ClientContext ctx, FileHashStore provisionCache)
         {
             var model = SPMeta2Model.NewWebModel(web =>
             {
-                const string pagesFolder = @"..\..\..\PostBuildFiles\Pages";
-                var pagesDeployer = new FileDeployer(null, web, Lists.TmProjectSitePages, pagesFolder);
+                string pagesFolder = Path.GetFullPath(@"..\..\..\PostBuildFiles\Pages");
+                IDeployer pagesDeployer = provisionCache == null
+                    ? new FileDeployer(null, web, Lists.TmProjectSitePages, pagesFolder)
+                    : new FileDeployerCacheable(null, web, Lists.TmProjectSitePages, pagesFolder, provisionCache);
                 pagesDeployer.Deploy();
             });
 
